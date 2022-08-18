@@ -1,0 +1,16 @@
+:root {
+    --themeOrangeGradient: linear-gradient(180deg,#ff8055 0%,#f2672a 100%);
+    --themeBlueGradient: -webkit-gradient(linear,left top,left bottom,from(#2c4d7a),to(#0f2c52));
+    --orange: #f2672a;
+    --blue: #0f2c52;
+    --black: #333;
+    --white: #fff;
+    --lightGrey: #f5f5f5;
+    --defaultGrey: #e6e6e6;
+    --grey: #ccc;
+    --darkGrey: #666;
+  }
+
+  body {
+    background-color: var(--grey);
+  }
