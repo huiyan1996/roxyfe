@@ -5,8 +5,10 @@
     <!-- <div class="row justify-content-center mt-3"> -->
     <!-- <div class="row">
       <div class="col-lg-12"> -->
-        <!-- <About :aboutDesc="aboutDesc" title="About Us" />
-        <Product :desc="testimonialDesc" :list="testimonialList" /> -->
+        <!-- <About :aboutDesc="aboutDesc" title="About Us" /> -->
+        <Banner />
+        <Mission :desc="missionDesc" />
+        <Product :list="productList" />
         <Ingredient :list="ingredientList" />
         <Benefit :desc="benefitDesc" :list="benefitList" />
         <Testimonial :desc="testimonialDesc" :list="testimonialList" />
@@ -28,6 +30,7 @@ export default {
         return {
             aboutDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing, elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit",
             testimonialDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ",
+            missionDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ",
             testimonialList: [
               { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "zarina-iskarova-uPv_C0TRDhE-unsplash.jpg" },
               { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "keith-tanner-QIAOgZKwaxA-unsplash.jpg" },
@@ -44,6 +47,11 @@ export default {
               { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo" },
               { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation" },
               { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo" },
+            ],
+            productList: [
+              { title: "Serum", src: "keith-tanner-QIAOgZKwaxA-unsplash.jpg" },
+              { title: "Collagen", src: "wasa-crispbread-zy_TwITav9c-unsplash.jpg" },
+              { title: "Whitening", src: "zarina-iskarova-mfdcvEc0EMA-unsplash.jpg" },
             ],
             list: [
                 { title: "USD/JPY是什么？", content: "<p>美元兑日元货币对。</p>" },
