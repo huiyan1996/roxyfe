@@ -1,16 +1,122 @@
 :root {
-    --themeOrangeGradient: linear-gradient(180deg,#ff8055 0%,#f2672a 100%);
-    --themeBlueGradient: -webkit-gradient(linear,left top,left bottom,from(#2c4d7a),to(#0f2c52));
-    --orange: #f2672a;
-    --blue: #0f2c52;
-    --black: #333;
-    --white: #fff;
-    --lightGrey: #f5f5f5;
-    --defaultGrey: #e6e6e6;
-    --grey: #ccc;
-    --darkGrey: #666;
+  --themeOrangeGradient: linear-gradient(180deg,#ff8055 0%,#f2672a 100%);
+  --themeBlueGradient: -webkit-gradient(linear,left top,left bottom,from(#2c4d7a),to(#0f2c52));
+  --orange: #f2672a;
+  --blue: #0f2c52;
+  --black: #333;
+  --white: #fff;
+  --lightGrey: #f5f5f5;
+  --defaultGrey: #e6e6e6;
+  --grey: #ccc;
+  --darkGrey: #666;
+  --bg: #f0ece0;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.mobileView {
+  display: none;
+}
+.pcView {
+  display: inline-block;
+}
+
+/* Navbar */
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+  transform: rotate(-15deg);
+  animation: rotate 1s linear alternate infinite;
+}
+
+.logo img, .logo span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 5;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.menu .menuItem, 
+.menuIco,
+.menu .menuItem:focus, 
+.menuIco:focus {
+  color: var(--black);
+}
+
+.mobileView {
+  display: none;
+}
+.pcView {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobileView {
+    display: inline-block;
+  }
+  .pcView {
+    display: none;
   }
 
-  body {
-    background-color: var(--grey);
+  .logo {
+    position: relative;
+    z-index: 3;
   }
+
+  .overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .menu {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    flex-flow: column;
+    z-index: 2;
+    background-color: var(--bg);
+    justify-content: flex-start;
+    padding-top: 80px;
+    transition: left .4s linear;
+  }
+
+  .menu.open {
+    box-shadow: 0 0 15px -11px #000;
+    left: 0;
+  }
+
+  .menu .menuItem {
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
