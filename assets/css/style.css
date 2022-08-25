@@ -12,8 +12,28 @@
   --bg: #f0ece0;
 }
 
+@font-face {
+  font-family: themeFont;
+  src: url(Rokkitt-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+    font-family: themeFont;
+    src: url(Rokkitt-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: themeFont;
+    src: url(Rokkitt-Light.ttf);
+    font-weight: lighter;
+}
+
 body {
   background-color: var(--bg);
+  font-family: themeFont;
+  font-size: 17px;
 }
 
 .mobileView {
@@ -34,6 +54,7 @@ body {
 .logo img, .logo span {
   display: inline-block;
   vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
