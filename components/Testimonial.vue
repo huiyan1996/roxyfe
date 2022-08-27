@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid testimonialWrapper p-5">
-        <b-row>
-            <b-col sm="12" lg="6">
+        <b-row align-v="center">
+            <b-col sm="12" lg="4" offset-lg="1">
                 <h1>Her</h1>
                 <h1 class="background-line">Story</h1>
                 <div class="testimonialDescription">{{desc}}</div>
@@ -38,7 +38,7 @@
                     </b-row>
                 </div>
             </b-col>
-            <b-col v-if="displayList" sm="12" lg="6" class="rightSection">
+            <b-col v-if="displayList" sm="12" lg="6" offset-lg="1" class="rightSection">
                 <div class="testimonialList">
                     <div class="testimonial" v-for="(v, k) in displayList" :key="k">
                         <img :src="require(`@/assets/images/${v.src}`)" :alt="v.title">
@@ -86,7 +86,8 @@ export default {
     display: flex;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #f7f4f0 0%, #f7f4f0 50%, #ffffff 50%, #ffffff 100%);;
+    // background: linear-gradient(180deg, #f7f4f0 0%, #f7f4f0 50%, #ffffff 50%, #ffffff 100%);;
+    background: #f7f4f0;
     color: #414040;
 
     .background-line {
