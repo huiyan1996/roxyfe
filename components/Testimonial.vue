@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid testimonialWrapper p-5">
         <b-row>
-            <b-col sm="12" lg="6" class="h-100">
+            <b-col sm="12" lg="6">
                 <h1>Her</h1>
                 <h1 class="background-line">Story</h1>
                 <div class="testimonialDescription">{{desc}}</div>
@@ -128,7 +128,28 @@ export default {
 
     .rightSection {
         height: 100%;
+        max-height: 360px;
         overflow-y: auto;
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #ffbbae; 
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #ffa998; 
+        }
     }
 
     .testimonialList {
