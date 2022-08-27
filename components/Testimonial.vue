@@ -1,8 +1,9 @@
 <template>
   <div class="container-fluid testimonialWrapper p-5">
         <b-row>
-            <b-col sm="12" lg="6">
-                <h1>Her<br> Story</h1>
+            <b-col sm="12" lg="6" class="h-100">
+                <h1>Her</h1>
+                <h1 class="background-line">Story</h1>
                 <div class="testimonialDescription">{{desc}}</div>
                 <div class="testimonialSocialMedia">
                     <b-row>
@@ -37,9 +38,9 @@
                     </b-row>
                 </div>
             </b-col>
-            <b-col v-if="displayList" sm="12" lg="6">
-                <div class="testimonialList" v-for="(v, k) in displayList" :key="k">
-                    <div class="testimonial">
+            <b-col v-if="displayList" sm="12" lg="6" class="rightSection">
+                <div class="testimonialList">
+                    <div class="testimonial" v-for="(v, k) in displayList" :key="k">
                         <img :src="require(`@/assets/images/${v.src}`)" :alt="v.title">
                         <div class="testimonialTitle">{{v.title}}</div>
                         <div class="testimonialContent" v-html="v.content"></div>
@@ -84,8 +85,24 @@ export default {
 .testimonialWrapper {
     display: flex;
     width: 100%;
+    height: 100%;
     background: linear-gradient(180deg, #f7f4f0 0%, #f7f4f0 50%, #ffffff 50%, #ffffff 100%);;
     color: #414040;
+
+    .background-line {
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 120px;
+            right: 0px;
+            height: 1.5px;
+            background: #666;
+        }
+    }
 
     .testimonialDescription {
         margin-top: 15px;
@@ -109,17 +126,32 @@ export default {
         
     }
 
+    .rightSection {
+        height: 100%;
+        overflow-y: auto;
+    }
+
     .testimonialList {
+        column-gap: 20px;
+        padding: 0;
+        column-count: 2;
         .testimonial {
+            width: 100%;
+            // height: 400px;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            break-inside: avoid;
             font-size: 12px;
             img {
-                width: 220px;
+                width: 100%;
             }
             .testimonialTitle {
                 
             }
             .testimonialContent {
                 font-weight: bold;
+                padding-bottom: 1px;
             }
         }
     }

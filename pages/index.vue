@@ -32,9 +32,11 @@ export default {
             testimonialDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ",
             missionDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ",
             testimonialList: [
+              { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "josue-michel-wtGp_v9VhqM-unsplash.jpg" },
+              { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "wasa-crispbread-zy_TwITav9c-unsplash.jpg" },
+              { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "marian-luzi-DBeaZsvTKIw-unsplash.jpg" },
               { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "zarina-iskarova-uPv_C0TRDhE-unsplash.jpg" },
               { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "keith-tanner-QIAOgZKwaxA-unsplash.jpg" },
-              { title: "Lorem ipsum dolor sit", content: "<p>consectetuer adipiscing</p>", src: "wasa-crispbread-zy_TwITav9c-unsplash.jpg" }
             ],
             benefitDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit",
             benefitList: [
