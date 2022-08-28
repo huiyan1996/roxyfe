@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid testimonialWrapper p-5">
+  <div class="container-fluid testimonialWrapper p-3 p-md-5">
         <b-row align-v="center">
             <b-col sm="12" lg="4" offset-lg="1">
                 <h1>Her</h1>
@@ -112,7 +112,8 @@ export default {
     .testimonialSocialMedia {
         display: flex;
         align-items: flex-start;
-        width: 200px;
+        justify-content: flex-start;
+        width: 100%;
         margin: 20px 0px;
 
         .testimonialSocialMediaTag {
@@ -125,6 +126,9 @@ export default {
             }
         }
         
+        @media only screen and (max-width: 768px) {
+            justify-content: flex-end;
+        }
     }
 
     .rightSection {
