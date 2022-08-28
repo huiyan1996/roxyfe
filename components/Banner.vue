@@ -1,11 +1,13 @@
 <template>
     <div class="bannerWrapper mobileView">
-        <b-row>
-            <b-col class="bannerImg" cols="12">
-                <img class="bannerImgBg" src="~/assets/images/roxyLandingBg.png" alt="Mobile Banner">
-                <img class="bannerRose" src="~/assets/images/rose.png" alt="Rose" />
-            </b-col>
-        </b-row>
+        <div class="col-12">
+            <div class="row">
+                <b-col class="bannerImg px-0" cols="12">
+                    <img class="bannerImgBg" src="~/assets/images/roxyLandingBg.png" alt="Mobile Banner">
+                    <img class="bannerRose" src="~/assets/images/rose.png" alt="Rose" />
+                </b-col>
+            </div>
+        </div>
     </div>
 </template>
 
