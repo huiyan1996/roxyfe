@@ -55,7 +55,7 @@ export default {
         top: 0;
         bottom: 0;
         width: 30%;
-        font-size: 50px;
+        font-size: 40px;
         display: flex;
         align-items: center;
         color: #fff;
