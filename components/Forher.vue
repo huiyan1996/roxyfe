@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid forHerWrapper">
+    <div class="container-fluid forHerWrapper pcView">
         <div class="col-12">
             <div class="row align-content-end">
                 <div class="col-6 col-md-5">

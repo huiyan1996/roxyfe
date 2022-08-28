@@ -1,13 +1,13 @@
 <template>
-    <div class="container-fluid benefitWrapper p-5">
+    <div class="container-fluid benefitWrapper p-md-5 p-3">
         <div class="benefitContainer">
             <b-row class="justify-content-center mb-5">
-                <b-col md="10" lg="8">
+                <b-col cols="12" md="10" lg="8">
                     <b-row>
-                        <b-col md="4" cols="6">
+                        <b-col cols="5" md="4">
                             <img class="benefitImg" src="~/assets/images/product.png" alt="" />
                         </b-col>
-                        <b-col cols="6" md="7" offset-md="1">
+                        <b-col cols="7" md="7" offset-md="1">
                             <div class="benefitContent">
                                 <h2>Serum</h2>
                                 <div class="benefitDescription">{{desc}}</div>
@@ -21,7 +21,7 @@
             <b-row v-if="displayList" class="justify-content-center">
                 <b-col md="10" lg="8">
                     <b-row>
-                        <b-col cols="6" md="3" v-for="(v, k) in displayList" :key="k">
+                        <b-col class="mb-3" cols="6" md="3" v-for="(v, k) in displayList" :key="k">
                             <div class="benefits">
                                 <img :src="require(`@/assets/images/${v.src}`)" :alt="v.title" />
                                 <div class="benefitTitle text-center">{{v.title}}</div>
@@ -80,6 +80,10 @@ export default {
             right: 0px;
             height: 1.5px;
             background: #666;
+
+            @media only screen and (max-width: 768px) {
+                top: 15%;
+            }
         }
     }
 
@@ -95,12 +99,21 @@ export default {
         position: relative;
         top: calc(30% + 30px);
         margin-bottom: calc(30% + 30px);
+
+        @media only screen and (max-width: 768px) {
+            top: calc(15% + 30px);
+            margin-bottom: calc(15% + 30px);
+        }
     }
 
     .benefitDescription {
         background: #FCE7E3;
         margin-top: 15px;
         font-size: 20px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     .benefits {

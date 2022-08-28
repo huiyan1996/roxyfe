@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutWrapper p-5">
+  <div class="aboutWrapper p-5 pcView">
     <div class="container">
         <b-row class="justify-content-center">
             <b-col cols="10">

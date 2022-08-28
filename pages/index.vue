@@ -8,6 +8,7 @@
         <!-- <About :aboutDesc="aboutDesc" title="About Us" /> -->
         <Banner />
         <About :desc="aboutDesc" />
+        <Mission :desc="testimonialDesc" />
         <Forher :desc="missionDesc" />
         <Product :list="productList" />
         <Ingredient :list="ingredientList" />

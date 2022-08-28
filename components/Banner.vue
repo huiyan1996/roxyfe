@@ -1,8 +1,9 @@
 <template>
-    <div class="container-fluid bannerWrapper p-5">
-        <b-row class="bannerVid mb-5">
-            <b-col cols="12">
-                <img src="~/assets/images/josue-michel-wtGp_v9VhqM-unsplash.jpg" alt="">
+    <div class="bannerWrapper mobileView">
+        <b-row>
+            <b-col class="bannerImg" cols="12">
+                <img class="bannerImgBg" src="~/assets/images/roxyLandingBg.png" alt="Mobile Banner">
+                <img class="bannerRose" src="~/assets/images/rose.png" alt="Rose" />
             </b-col>
         </b-row>
     </div>
@@ -27,14 +28,27 @@ export default {
 
 <style lang="scss" scoped>
 .bannerWrapper {
+    width: 100%;
     background: #FCE7E3;
     color: #414040;
 
-    .bannerVid {
-        width: 100%;
-
-        img, video {
+    .bannerImg {
+        position: relative;
+        
+        .bannerImgBg {
             width: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .bannerRose {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 50px;
+            width: 50px;
+            filter: invert(1);
         }
     }
 }
