@@ -1,19 +1,23 @@
 <template>
-    <div class="container-fluid missionWrapper p-5">
-        <b-row class="mb-5" align-content="end">
-            <b-col cols="6" md="5">
-                <!-- <div class="missionDescription">{{desc}}</div> -->
-            </b-col>
-            <b-col class="for-her" cols="6" md="7">
-                <!-- <img class="missionImg" src="~/assets/images/marian-luzi-DBeaZsvTKIw-unsplash.jpg" alt=""> -->
-                <div class="missionDescription">{{desc}}</div>
-            </b-col>
-        </b-row>
-        <b-row class="btn-row">
-            <b-col class="text-center" cols="12">
-                <button type="button" class="btn btn-light">For her</button>
-            </b-col>
-        </b-row>
+    <div class="container-fluid forHerWrapper">
+        <div class="col-12">
+            <div class="row align-content-end">
+                <div class="col-6 col-md-5">
+                </div>
+                <div class="col-6 col-md-7 px-0">
+                    <div class="missionWrapper">
+                        <img src="~/assets/images/forHerContent.jpg" width="100%" alt="">
+                        <div class="missionDescription">{{desc}}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row btn-row">
+                <div class="col-md-7 offset-md-5">
+                    <button type="button" class="btn btn-light">For her</button>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -35,35 +39,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.forHerWrapper {
+    background-image: url(~/assets/images/forHerBg.png);
+    background-size: cover;
+    padding-bottom: 50px;
+    background-position: center;
+}
+
 .missionWrapper {
-    background: #FCE7E3;
-    color: #414040;
-
-    .for-her {
-        background-image: url("~/assets/images/marian-luzi-DBeaZsvTKIw-unsplash.jpg");
-        background-size: cover;
-        height: 420px;
-    }
-
-    .missionImg {
-        width: 100%;
-        object-fit: contain;
-        border-radius: 40% 40% 0% 0%;
-    }
+    position: relative;
 
     .missionDescription {
-        margin-top: 15px;
-        font-size: 16px;
+        position: absolute;
+        left: 10%;
+        top: 0;
+        bottom: 0;
+        width: 30%;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        color: #fff;
     }
+}
 
-    .btn-row {
-        margin-top: -50px;
+.btn-row {
+    transform: translateY(-50%);
 
-        .btn {
-            font-size: 32px;
-            border-radius: 35px;
-            padding: 2px 40px;
-        }
+    .btn {
+        transform: translateX(-70%);
+        font-size: 32px;
+        border-radius: 35px;
+        padding: 2px 40px;
     }
 }
 </style>
