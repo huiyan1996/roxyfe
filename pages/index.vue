@@ -40,10 +40,10 @@ export default {
             ],
             benefitDesc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit",
             benefitList: [
-              { title: "Lorem ipsum", src: "keith-tanner-QIAOgZKwaxA-unsplash.jpg" },
-              { title: "Lorem ipsum", src: "wasa-crispbread-zy_TwITav9c-unsplash.jpg" },
-              { title: "Lorem ipsum", src: "zarina-iskarova-mfdcvEc0EMA-unsplash.jpg" },
-              { title: "Lorem ipsum", src: "zarina-iskarova-uPv_C0TRDhE-unsplash.jpg" },
+              { title: "Lorem ipsum", src: "productDesc01.png" },
+              { title: "Lorem ipsum", src: "productDesc02.png" },
+              { title: "Lorem ipsum", src: "productDesc03.png" },
+              { title: "Lorem ipsum", src: "productDesc04.png" },
             ],
             ingredientList: [
               { content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo" },

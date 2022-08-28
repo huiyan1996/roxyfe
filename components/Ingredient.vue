@@ -1,6 +1,6 @@
 <template>
     <div v-if="displayList" class="container-fluid ingredientWrapper p-5">
-        <b-row>
+        <b-row class="justify-content-center">
             <b-col class="ingredients" cols="12" md="4" v-for="(v, k) in displayList" :key="k">
                 <p>{{v.content}}</p>
             </b-col>

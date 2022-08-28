@@ -7,7 +7,7 @@
                         <b-col cols="6" md="3">
                             <img class="benefitImg" src="~/assets/images/vasilina-sirotina-Qwf-Y9MjED8-unsplash.jpg" alt=""></img>
                         </b-col>
-                        <b-col cols="6" md="5" offset="1">
+                        <b-col cols="6" offset-md="1">
                             <div class="benefitContent">
                                 <h2>Serum</h2>
                                 <div class="benefitDescription">{{desc}}</div>

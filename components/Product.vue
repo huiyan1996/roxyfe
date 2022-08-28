@@ -1,7 +1,7 @@
 <template>
     <div v-if="displayList" class="container-fluid productWrapper p-5">
-        <b-row class="text-center">
-            <b-col class="products" cols="12" sm="6" lg="4" v-for="(v, k) in displayList" :key="k">
+        <b-row class="justify-content-center text-center">
+            <b-col class="products mb-3" cols="12" sm="6" lg="4" v-for="(v, k) in displayList" :key="k">
                 <img :src="require(`@/assets/images/${v.src}`)" :alt="v.title">
                 <div class="productTitle">{{v.title}}</div>
             </b-col>

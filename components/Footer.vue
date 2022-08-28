@@ -12,7 +12,7 @@
             </b-col>
             <b-col sm="12" md="6">
                 <b-row class="sitemaps">
-                    <b-col sm="6" lg="4">
+                    <b-col cols="6" lg="4">
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Product</a></li>
