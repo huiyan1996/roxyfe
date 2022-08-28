@@ -5,7 +5,7 @@
                 <b-col md="10" lg="8">
                     <b-row>
                         <b-col cols="6" md="3">
-                            <img class="benefitImg" src="~/assets/images/vasilina-sirotina-Qwf-Y9MjED8-unsplash.jpg" alt=""></img>
+                            <img class="benefitImg" src="~/assets/images/product.png" alt="" />
                         </b-col>
                         <b-col cols="6" offset-md="1">
                             <div class="benefitContent">

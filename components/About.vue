@@ -5,7 +5,7 @@
             <b-col cols="10">
                 <b-row align-v="end">
                     <b-col class="aboutImg" cols="5" lg="4">
-                        <img class="aboutImgBg" src="~/assets/images/vasilina-sirotina-Qwf-Y9MjED8-unsplash.jpg" alt="About Us" />
+                        <img class="aboutImgBg" src="~/assets/images/abtUs.png" alt="About Us" />
                         <img class="aboutRose" src="~/assets/images/rose.png" alt="Rose" />
                     </b-col>
                     <b-col class="aboutDesc" cols="7">
