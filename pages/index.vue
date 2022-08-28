@@ -7,6 +7,7 @@
       <div class="col-lg-12"> -->
         <!-- <About :aboutDesc="aboutDesc" title="About Us" /> -->
         <Banner />
+        <About :desc="aboutDesc" />
         <Mission :desc="missionDesc" />
         <Product :list="productList" />
         <Ingredient :list="ingredientList" />
