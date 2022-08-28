@@ -4,10 +4,10 @@
             <b-row class="justify-content-center mb-5">
                 <b-col md="10" lg="8">
                     <b-row>
-                        <b-col cols="6" md="3">
+                        <b-col md="4" cols="6">
                             <img class="benefitImg" src="~/assets/images/product.png" alt="" />
                         </b-col>
-                        <b-col cols="6" offset-md="1">
+                        <b-col cols="6" md="7" offset-md="1">
                             <div class="benefitContent">
                                 <h2>Serum</h2>
                                 <div class="benefitDescription">{{desc}}</div>
@@ -17,6 +17,7 @@
                 </b-col>
             </b-row>
         </div>
+        <div class="mt-5">
             <b-row v-if="displayList" class="justify-content-center">
                 <b-col md="10" lg="8">
                     <b-row>
@@ -29,6 +30,7 @@
                     </b-row>
                 </b-col>
             </b-row>
+        </div>
     </div>
 </template>
 
@@ -91,19 +93,22 @@ export default {
     .benefitContent {
         // margin-top: 30%;
         position: relative;
-        top: calc(30% + 20px);
+        top: calc(30% + 30px);
+        margin-bottom: calc(30% + 30px);
     }
 
     .benefitDescription {
         background: #FCE7E3;
         margin-top: 15px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .benefits {
         width: 100%;
+        text-align: center;
+
         img {
-            width: 100%;
+            width: 80%;
             object-fit: contain;
             border-radius: 50%;
         }
